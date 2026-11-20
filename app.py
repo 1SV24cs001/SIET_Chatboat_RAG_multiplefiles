@@ -7,7 +7,7 @@ st.caption("Created by Abhilash")
 mykey = st.secrets["GROQ_API_KEY"]
 @st.cache_resource
 def initiate_rag():
-  return load_base("college abhi.pdf")
+  return load_base("college_docs")
 
 index,embed_model,chunks = initiate_rag()
 if "chat_hist" not in st.session_state:
