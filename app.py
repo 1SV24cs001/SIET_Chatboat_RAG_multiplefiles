@@ -4,7 +4,7 @@ st.set_page_config(page_title = "SIET_Chatboat", layout = "centered")
 st.title("Shridevi Institute of engineering and Technology - ChatBot")
 st.caption("Ask anything about college information...")
 st.caption("Created by Abhilash")
-mykey = st.secrets("GROQ_API_KEY")
+mykey = st.secrets["GROQ_API_KEY"]
 @st.cache_resource
 def intiate_rag():
   return load_base("college abhi.pdf")
